@@ -1,6 +1,6 @@
 {
   "name": "db-schema-validator",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "My bee&#39;s knees module",
   "license": "MIT",
   "repository": "mastilver/db-schema-validator",
@@ -40,7 +40,13 @@
   "xo": {
     "space": 4,
     "rules": {
-      "brace-style": [2, "stroustrup", {"allowSingleLine": false}]
+      "brace-style": [
+        2,
+        "stroustrup",
+        {
+          "allowSingleLine": false
+        }
+      ]
     }
   },
   "ava": {
