@@ -38,7 +38,10 @@
     "xo": "^0.12.1"
   },
   "xo": {
-    "space": 4
+    "space": 4,
+    "rules": {
+      "brace-style": [2, "stroustrup", {"allowSingleLine": false}]
+    }
   },
   "ava": {
     "require": "babel-core/register"
