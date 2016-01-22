@@ -1,6 +1,6 @@
 {
   "name": "db-schema-validator",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "My bee&#39;s knees module",
   "license": "MIT",
   "repository": "mastilver/db-schema-validator",
