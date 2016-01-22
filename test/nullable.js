@@ -19,3 +19,11 @@ test('validate nullable core types', t => {
         any: undefined
     }));
 });
+
+test('validate array of nullable', t => {
+    t.ok(schemaValidator({
+        aNullableArray: ['string?']
+    })({
+        aNullableArray: [undefined, null, 'test']
+    }));
+});
