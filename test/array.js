@@ -33,3 +33,23 @@ test('don\'t validate a array of string when given a number', t => {
         anyArray: 2
     }), /Expected 'anyArray' to be an array of string/);
 });
+
+test('validate array of object', t => {
+    t.ok(schemaValidator({
+        anArrayOfObject: [{
+            aString: 'string',
+            aNumber: 'number'
+        }]
+    })({
+        anArrayOfObject: [
+            {
+                aString: 'test',
+                aNumber: 1
+            },
+            {
+                aString: 'test2',
+                aNumber: 21
+            }
+        ]
+    }));
+});
