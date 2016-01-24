@@ -1,6 +1,6 @@
 {
   "name": "db-schema-validator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Object model validation",
   "license": "MIT",
   "repository": "mastilver/db-schema-validator",
