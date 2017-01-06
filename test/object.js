@@ -3,7 +3,7 @@ import test from 'ava';
 import schemaValidator from '../lib/index';
 
 test('validate an object', t => {
-    t.ok(schemaValidator({
+    t.true(schemaValidator({
         anObject: {
             aString: 'string',
             aNumber: 'number'
@@ -31,7 +31,7 @@ test('don\'t validate an object', t => {
 });
 
 test('validate a nested object', t => {
-    t.ok(schemaValidator({
+    t.true(schemaValidator({
         object1: {
             object2: {
                 object3: {

@@ -7,13 +7,13 @@ const validate = schemaValidator({
 });
 
 test('validate floating number', t => {
-    t.ok(validate({
+    t.true(validate({
         nonNullableNumber: 2.1
     }));
 });
 
 test('validate int', t => {
-    t.ok(validate({
+    t.true(validate({
         nonNullableNumber: 2
     }));
 });
