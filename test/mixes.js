@@ -19,5 +19,5 @@ test('validate core types', t => {
         any: 'any'
     });
 
-    t.is(true, result);
+    t.true(result);
 });

@@ -7,7 +7,7 @@ const validate = schemaValidator({
 });
 
 test('validate int', t => {
-    t.ok(validate({
+    t.true(validate({
         nonNullableInt: 2
     }));
 });

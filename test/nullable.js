@@ -3,7 +3,7 @@ import test from 'ava';
 import schemaValidator from '../lib/index';
 
 test('validate nullable core types', t => {
-    t.ok(schemaValidator({
+    t.true(schemaValidator({
         string: 'string?',
         number: 'number?',
         int: 'int?',
@@ -21,7 +21,7 @@ test('validate nullable core types', t => {
 });
 
 test('validate array of nullable', t => {
-    t.ok(schemaValidator({
+    t.true(schemaValidator({
         aNullableArray: ['string?']
     })({
         aNullableArray: [undefined, null, 'test']

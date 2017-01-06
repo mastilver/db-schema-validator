@@ -7,7 +7,7 @@ const validate = schemaValidator({
 });
 
 test('validate string', t => {
-    t.ok(validate({
+    t.true(validate({
         nonNullableString: 'test'
     }));
 });

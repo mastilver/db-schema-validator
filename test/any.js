@@ -7,31 +7,31 @@ const validate = schemaValidator({
 });
 
 test('validate any with a bool', t => {
-    t.ok(validate({
+    t.true(validate({
         anyNonNullable: true
     }));
 });
 
 test('validate any with a number', t => {
-    t.ok(validate({
+    t.true(validate({
         anyNonNullable: 2.0
     }));
 });
 
 test('validate any with a int', t => {
-    t.ok(validate({
+    t.true(validate({
         anyNonNullable: 2
     }));
 });
 
-test('validate any with a bool', t => {
-    t.ok(validate({
+test('validate any with a string', t => {
+    t.true(validate({
         anyNonNullable: 'test'
     }));
 });
 
 test('validate any with a date', t => {
-    t.ok(validate({
+    t.true(validate({
         anyNonNullable: new Date()
     }));
 });
